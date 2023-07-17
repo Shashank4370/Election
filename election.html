@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Election System</title>
+    <style>
+        body {
+            background-image: url('election.PNG');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+            color: #000000;
+        }
+        .candidate-card {
+            width: 300px;
+            padding: 20px;
+            background-color:rgba(50, 50, 50, 0.7);
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .candidate-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .candidate-details {
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+        .vote-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Election System</h1>
+    
+    <div class="candidate-card">
+        <div class="candidate-name">Candidate A</div>
+        <div class="candidate-details">Party: Party A</div>
+        <div class="candidate-details">Age: 40</div>
+        <button class="vote-button" onclick="castVote('A')">Vote</button>
+    </div>
+
+    <div class="candidate-card">
+        <div class="candidate-name">Candidate B</div>
+        <div class="candidate-details">Party: Party B</div>
+        <div class="candidate-details">Age: 35</div>
+        <button class="vote-button" onclick="castVote('B')">Vote</button>
+    </div>
+
+    <div class="candidate-card">
+        <div class="candidate-name">Candidate C</div>
+        <div class="candidate-details">Party: Party C</div>
+        <div class="candidate-details">Age: 42</div>
+        <button class="vote-button" onclick="castVote('C')">Vote</button>
+    </div>
+
+    <script>
+        function castVote(candidate) {
+            // Logic to handle the vote
+            alert('You voted for Candidate ' + candidate);
+        }
+    </script>
+</body>
+</html>
